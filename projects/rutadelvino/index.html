@@ -1,0 +1,58 @@
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <title>Ruta del vino en Mendoza - Conociendo las mejores bodegas de Mendoza</title>
+    <!-- link a hoja de estilo de openlayers-->
+    <link rel=stylesheet href=./libs/v6.3.1-dist/ol.css><!-- link a hoja de estilo propia -->
+    <link rel=stylesheet href=./styles.css>
+</head>
+
+<body>
+    <div class=grid-container>
+        <div class=grid-1>
+            <div class=column-navigation> <a title=Home id=Home class=active><i class="fas fa-home" id=Home></i></a> <a
+                    title="Finca Decero" id="Finca Decero"><i class="far fa-circle" id="Finca Decero"></i></a>
+                <!-- Perth --> <a title=Cruzat id=Cruzat><i class="far fa-circle" id=Cruzat></i></a> <a title=Antigal
+                    id=Antigal><i class="far fa-circle" id=Antigal></i></a> <a title="Viña Cobos" id="Viña Cobos"><i
+                        class="far fa-circle" id="Viña Cobos"></i></a> <a title="Clos de Chacras"
+                    id="Clos de Chacras"><i class="far fa-circle" id="Clos de Chacras"></i></a> <a title="Trez Wines"
+                    id="Trez Wines"><i class="far fa-circle" id="Trez Wines"></i></a> <a title="Casa Vigil El Enemigo"
+                    id="Casa Vigil El Enemigo"><i class="far fa-circle" id="Casa Vigil El Enemigo"></i></a> <a
+                    title="Tierras Altas" id="Tierras Altas"><i class="far fa-circle" id="Tierras Altas"></i></a> <a
+                    title="Finca Sopheni" id="Finca Sophenia"><i class="far fa-circle" id="Finca Sophenia"></i></a> <a
+                    title="Super Uco" id="Super Uco"><i class="far fa-circle" id="Super Uco"></i></a> <a
+                    title="Finca Piedra Infinita" id="Finca Piedra Infinita"><i class="far fa-circle"
+                        id="Finca Piedra Infinita"></i></a> <a title=DiamAndes id=DiamAndes><i class="far fa-circle"
+                        id=DiamAndes></i></a> <a title="Bodega Salentein" id="Bodega Salentein"><i class="far fa-circle"
+                        id="Bodega Salentein"></i></a> <a title="Casa de Uco" id="Casa de Uco"><i class="far fa-circle"
+                        id="Casa de Uco"></i></a> <a title="Bodega La azul" id="Bodega La azul"><i class="far fa-circle"
+                        id="Bodega La azul"></i></a> </div>
+        </div>
+        <div class=grid-2>
+            <div class=column-map id=openlayers-map></div>
+        </div>
+        <div class=grid-3>
+            <div class=column-menu id=menu-information>
+                <p id=bodeganame>Conoce las mejores bodegas de Mendoza</p> <img id=bodegaimage
+                    src=./data/Bodegas/ruta-del-vino.jpg alt="Ruta del vino">
+                <div id=bodegaDescripcion>
+                    <p>Para adentrarse en el mundo del vino, desde la uva hasta la barrica, va aquí una selección de
+                        establecimientos que invitan a compartir sus secretos. Recorridos y degustaciones en los
+                        alrededores de la capital provincial y un poco más allá, en el Valle de Uco.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=popover-information>
+        <p id=popover-text></p>
+    </div>
+    <script src=https://kit.fontawesome.com/495ed107ec.js crossorigin=anonymous></script>
+    <!-- link a la libreria de openlayers -->
+    <script src=./libs/v6.3.1-dist/ol.js></script>
+    <!-- link a la librería principal de nuestra aplicación openlayers -->
+    <script src=./main.js></script>
+</body>
+
+</html>
